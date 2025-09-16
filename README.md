@@ -5,11 +5,11 @@ Este repositorio contiene la selección de fuentes y datos iniciales para constr
 Estructura de carpetas
 rag-poc-sophilabs/
 ├─ data/
-│  ├─ html/        
-│  ├─ pdfs/    
-│  └─ projects.csv # Tabla con información de proyectos
+│  ├─ html/
+│  ├─ pdfs/
+│  └─ projects.csv
 ├─ src/
-│  └─ download_pages.py  # Script utilizado para descargar páginas HTML
+│  └─ download_pages.py
 └─ README.md
 
 Fuentes seleccionadas

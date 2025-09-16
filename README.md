@@ -1,24 +1,35 @@
-# RAG POC - Sophilabs
+RAG POC - Sophilabs
 
-## 📂 Corpus
-- **PDFs**: About, Case Studies (guardados en `data/pdfs/`).
-- **CSVs**: Projects dataset de ejemplo (`data/projects.csv`).
-- **HTML**: Homepage, Services, Case Studies (descargados con `src/download_pages.py`).
+Este repositorio contiene la selección de fuentes y datos iniciales para construir un pipeline RAG usando LlamaIndex. El objetivo de esta parte fue recolectar y organizar la información relevante para que luego pueda ser procesada y vectorizada por los demás componentes del pipeline.
 
-## 🎯 Criterio de selección
-- Páginas que describen servicios, casos de uso y clientes (info técnica).
-- Se evita contenido promocional o de blog.
-- Se usan formatos variados (PDF, CSV, HTML) para probar robustez del pipeline.
+Estructura de carpetas
+rag-poc-sophilabs/
+├─ data/
+│  ├─ html/        
+│  ├─ pdfs/    
+│  └─ projects.csv # Tabla con información de proyectos
+├─ src/
+│  └─ download_pages.py  # Script utilizado para descargar páginas HTML
+└─ README.md
 
-## ▶️ Cómo correr
-```bash
-# Crear entorno (si no existe)
-python3 -m venv .venv
-source .venv/bin/activate
+Fuentes seleccionadas
 
-# Instalar dependencias
-pip install llama-index pypdf requests
+HTML: páginas relacionadas con clientes, procesos internos y proyectos de Sophilabs.
 
-# Descargar HTMLs
-python src/download_pages.py
+PDFs: documentos internos de referencia, manuales y reportes relevantes.
 
+CSV (projects.csv): tabla con datos de proyectos históricos y actuales, incluyendo cliente, año, tecnologías utilizadas y descripción.
+
+Criterio de selección
+
+Solo se incluyeron fuentes relevantes al corpus de conocimiento definido para este POC.
+
+Se priorizó la información que pudiera ser útil para consultas posteriores por un LLM.
+
+Se mantuvo consistencia en formatos y nomenclatura para facilitar el procesamiento posterior.
+
+Repositorio
+
+Este repositorio está preparado como POC con permisos de lectura para el equipo de desarrollo.
+
+Los scripts y datos aquí contenidos son la base para el procesamiento y vectorización que realizará el pipeline.

@@ -3,14 +3,23 @@ RAG POC - Sophilabs
 Este repositorio contiene la selección de fuentes y datos iniciales para construir un pipeline RAG usando LlamaIndex. El objetivo de esta parte fue recolectar y organizar la información relevante para que luego pueda ser procesada y vectorizada por los demás componentes del pipeline.
 
 Estructura de carpetas
+
 rag-poc-sophilabs/
-├─ data/
-│  ├─ html/
-│  ├─ pdfs/
-│  └─ projects.csv
-├─ src/
-│  └─ download_pages.py
-└─ README.md
+
+data/
+
+html/
+
+pdfs/
+
+projects.csv
+
+src/
+
+download_pages.py
+
+README.md
+
 
 Fuentes seleccionadas
 
